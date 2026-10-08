@@ -1,0 +1,86 @@
+<!DOCTYPE.html>
+<html>
+<head>
+    <title>Home</title>
+    <style>
+                body { 
+            margin: 0; 
+            font-family: Arial, sans-serif; 
+            background: #f4f4f4; 
+        }
+        
+        nav { 
+            background: black; 
+            padding: 18px; 
+            text-align: center; 
+        }
+        
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            margin: 15px; 
+            font-weight: bold; 
+        }
+
+        /* Updated container with background image and overlay */
+        .home { 
+            min-height: calc(100vh - 56px); /* Adjusts for the navbar height */
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            text-align: center; 
+            /* Adds a dark overlay blend over a cinematic background image */
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url(images.jpg) no-repeat center center/cover;
+            color: white; 
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Stylized white transparent box containing the text */
+        .content-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 800px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        /* Title positioned squarely above the paragraph */
+        .home h1 { 
+            font-size: 45px; 
+            margin-top: 0;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        /* Paragraph text adjustments */
+        .home p { 
+            font-size: 18px; 
+            line-height: 1.6;
+            margin: 0;
+            color: #e0e0e0;
+        }
+
+    </style>
+</head>
+<body>
+<nav> 
+    <a href="Home.html">&#127968;Home</a>
+    <a href="About.html">&#128204;About</a>
+    <a href="Product.html">&#x1F4E6;Product</a>
+    <a href="Contact.html">&#128222;Contact</a>
+    <a href="Films.html">&#127909;Videos</a>
+</nav>
+<div class="home">
+    <div>
+        <!-- New semantic wrapping container -->
+        <div class="content-container"> 
+		<p>We offer a variety of quality motorcycle parts and accessories to help keep your motorcycle in good condition.</p>
+		<p>Our products including engine parts, cvt parts, pipes, and other motorcycle accessories. </p>
+		<p>We are committed to providing reliable products and helping motorcycle owners find the parts they need. </p>
+</div>
+</body>
+</html>
